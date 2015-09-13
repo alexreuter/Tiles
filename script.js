@@ -25,7 +25,7 @@ $(function(){
         //CALL SPECIFIC ANIMATING FUNCTIONS HERE
         
         
-        ctx.fillStyle = getRandomColor();
+        ctx.fillStyle = "black";
         ctx.fillRect(0,0,canvas.width,canvas.height);
         drawTiles();
     }
@@ -35,10 +35,10 @@ $(function(){
     
     function drawTiles()
     {
-        var tiles = 2;
-        var border = 10;
+        var tiles = 200;
+        var border = 0;
         var width = 0;
-        var rows = 5;
+        var rows = 200;
         
         width = (canvas.width-(border*(tiles-1)))/tiles;
         height = (canvas.height-(border*rows-1))/rows;
@@ -63,7 +63,7 @@ $(function(){
             color += letters[Math.floor(Math.random() * 16)];
         }
         return color;
-}
+    }
     
     
     
